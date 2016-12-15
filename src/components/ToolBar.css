@@ -1,0 +1,9 @@
+.ToolBar {
+  text-align: center;
+  background-color: #4f4;
+  border: 2px;
+  height: 25px;
+  padding: 10px;
+  padding-right: 10px;
+  color: white;
+}
