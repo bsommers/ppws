@@ -19,8 +19,3 @@ class MainPanel extends Component {
 }
 
 export default MainPanel;
-
-// {this.props.conditions}
-// <br />
-// <img src={this.props.icon_url}
-//   alt={this.props.conditions} />

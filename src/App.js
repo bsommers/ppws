@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ToolBar  from './components/ToolBar';
 import MainPanel from './components/MainPanel';
+import FontAwesome from 'react-fontawesome';
 
 class App extends Component {
   constructor() {
@@ -19,7 +20,14 @@ class App extends Component {
 
   render() {
     if (!this.state.forecast) {
-      return (<div> Loading... </div>)
+      //return (<div> Loading... </div>)
+      return (<FontAwesome
+                className='super-crazy-colors'
+                name='fa-spinner'
+                size='2x'
+                spin
+              />
+              )
     }
     let { simpleforecast } = this.state.forecast.forecast;
     console.log(simpleforecast);
@@ -45,6 +53,12 @@ class App extends Component {
         </div>
         <div className="Tools">
           <ToolBar />
+          <br />
+          <FontAwesome
+                    name='fa-spinner'
+                    size='2x'
+                    tag='i'
+                  />
         </div>
         <p className="App-intro">
           Patrick's Personal Weather Station (PPWS)
